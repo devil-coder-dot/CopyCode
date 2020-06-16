@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_upload_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <ImageView android:layout_gravity="center" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="40dp" android:src="@drawable/ic_upload_color" android:contentDescription="@null"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_test_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:hint="Lab/Test ID" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:endIconMode="2" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/edt_test_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btn_upload" android:background="@drawable/bg_primary_btn_round" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="30dp" android:text="@string/upload" android:onClick="onClick" android:textAllCaps="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    <TextView android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="" android:textAlignment="center"/>
+</LinearLayout>

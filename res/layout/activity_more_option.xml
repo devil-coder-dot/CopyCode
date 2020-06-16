@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_more_option_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <TextView android:id="@id/tv_unique_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/layout_toolbar" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <Button android:id="@id/breatheBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/start_breathing_exercise" android:layout_below="@id/tv_unique_id" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+    <Button android:id="@id/formBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="20.0dip" android:text="@string/questionnaire" android:layout_below="@id/breatheBtn" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/btn_logout" android:background="@drawable/bg_primary_btn_round" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" android:text="@string/log_out" android:layout_alignParentBottom="true" android:onClick="onClick" android:textAllCaps="true" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+</RelativeLayout>

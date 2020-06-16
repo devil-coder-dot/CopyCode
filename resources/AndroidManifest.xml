@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="1.1.2" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.cosafe.android" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.cosafe.android.base.AppController" android:allowBackup="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <activity android:name="com.cosafe.android.FormActivity"/>
+        <activity android:name="com.cosafe.android.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cosafe.android.LoginActivity"/>
+        <activity android:name="com.cosafe.android.MainActivity"/>
+        <activity android:name="com.cosafe.android.UploadActivity"/>
+        <activity android:name="com.cosafe.android.UploadActivityNew" android:screenOrientation="portrait"/>
+        <activity android:name="com.cosafe.android.UploadLocationDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.cosafe.android.BreathingActivityNew" android:screenOrientation="portrait"/>
+        <activity android:name="com.cosafe.android.MoreOptionActivity"/>
+        <activity android:name="com.cosafe.android.PermissionActivity"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.cosafe.android.BreathingActivity"/>
+        <service android:name="com.cosafe.android.service.AppService"/>
+        <activity android:name="com.cosafe.android.introslider.WelcomeActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

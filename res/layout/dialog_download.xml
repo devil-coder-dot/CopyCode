@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/dialog_download_0" android:background="#4b000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.skyfishjy.library.RippleBackground android:id="@id/ripple_bng" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rb_color="#ffffeb3b" app:rb_duration="3000" app:rb_radius="32.0dip" app:rb_rippleAmount="4" app:rb_scale="6.0">
+        <ImageView android:id="@id/logo" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_logo_trans" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </com.skyfishjy.library.RippleBackground>
+    <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/btn_close" android:background="@drawable/bg_primary_btn_round" android:layout_width="100.0dip" android:layout_height="45.0dip" android:layout_marginBottom="100.0dip" android:text="@string/close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" android:textAllCaps="false" />
+    <TextView android:textColor="#ffffffff" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="150.0dip" android:text="@string/your_request_accepted" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_upload_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ImageView android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/ic_upload_color" android:contentDescription="@null" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/input_test_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:hint="Lab/Test ID" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:endIconMode="clear_text" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/edt_test_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/btn_upload" android:background="@drawable/bg_primary_btn_round" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:text="@string/upload" android:onClick="onClick" android:textAllCaps="true" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+    <TextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/headerbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout android:orientation="horizontal" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upload" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="40dp" android:src="@drawable/ic_upload_color" android:contentDescription="@null"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/uniqueIdLay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_test_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:hint="Enter Unique ID" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:endIconMode="2" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/uniqueIdEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/verifyUniqueIdBtn" android:background="@drawable/bg_primary_btn_round" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="30dp" android:text="@string/verify" android:onClick="onClick" android:textAllCaps="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/otpLay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:hint="Enter OTP" android:layout_marginStart="30dp" android:layout_marginEnd="30dp" app:endIconMode="2" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/otpEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/verifyOtpBtn" android:background="@drawable/bg_primary_btn_round" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="30dp" android:text="@string/verify" android:onClick="onClick" android:textAllCaps="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+</LinearLayout>

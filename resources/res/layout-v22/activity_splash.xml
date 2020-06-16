@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_splash_0" android:background="@drawable/splashscreen_corona" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <ImageView android:background="@drawable/digitalindialogo" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentLeft="true"/>
+        <ImageView android:background="@drawable/negdlogo" android:layout_width="70dp" android:layout_height="40dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/ic_splash_logo" android:contentDescription="@null"/>
+        <TextView android:textSize="26sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Corona Kavach"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="#0b3483" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/copyright_negd" android:lineHeight="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

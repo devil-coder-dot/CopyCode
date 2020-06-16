@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/dialog_location_0" android:background="@drawable/bg_white_5dp_radius_bng" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="Identifying your location..."/>
+    <ImageView android:id="@+id/iv_location_pin" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="60dp" android:layout_marginBottom="40dp" android:src="@drawable/ic_location_pin" android:layout_below="@+id/tv_heading" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+</RelativeLayout>
